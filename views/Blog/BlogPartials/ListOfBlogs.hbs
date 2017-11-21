@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h1 class="text-center">Blog List</h1>
+</div>
+{{> BlogNav}}
+{{#each this}}
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{Category}}</h2>
+            {{#DocumentList}}
+                <p>{{DocumentName}} at {{DocumentLocation}}</p>
+            {{/DocumentList}}
+        </div>
+    </div>
+{{/each}}
